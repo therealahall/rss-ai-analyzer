@@ -4,3 +4,6 @@ mypy
 flake8
 pytest-cov
 pre-commit
+types-requests
+types-beautifulsoup4
+types-python-dateutil
