@@ -8,3 +8,13 @@ services:
       - ./src:/app
     ports:
       - 8000:8000
+
+  test:
+    build:
+      context: .
+      target: development
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONPATH=/app/src
+    command: pytest

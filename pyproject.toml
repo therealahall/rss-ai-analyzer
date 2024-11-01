@@ -1,3 +1,16 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rss-analyzer"
+version = "0.0.1"
+description = "RSS Feed Analyzer with AI and ML capabilities"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["rss_analyzer*"]  # This will include all packages under rss_analyzer
+
 [tool.black]
 line-length = 88
 target-version = ['py311']
